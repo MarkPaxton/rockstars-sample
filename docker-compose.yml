@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  app_server:
+    image: docker.io/markpaxton/rockstarssample-app:latest
+    ports:
+      - 8080:8080
+    links:
+      - mongo_container:mongo_server
+  mongo_container:
+    build: ./mongo-db
