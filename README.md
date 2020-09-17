@@ -25,7 +25,7 @@ Bounce the database container (CTRL-C, run again) to reset the test data between
 
 Run the project standalone 
 
-_Start the test database container running as above - skip the tests if desired
+Start the test database container running as above - skip the tests if desired
 ```sh
 $ mvn install -DskipTests
 $ cd app
